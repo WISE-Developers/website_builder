@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/DocumentationTable.css';
+import Image from './Image';
 
 interface DocumentItem {
   imageSrc: string;
@@ -20,7 +21,7 @@ const DocumentationTable: React.FC<DocumentationTableProps> = ({ items }) => {
         {items.map((item, index) => (
           <tr key={index}>
             <td>
-              <img src={item.imageSrc} alt={item.altText || ''} />
+              <Image src={item.imageSrc} alt={item.altText || ''} />
             </td>
             <td>
               {item.title}

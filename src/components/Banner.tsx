@@ -1,4 +1,5 @@
 import '../styles/Banner.css';
+import Image from './Image';
 
 interface BannerProps {
   title: string;
@@ -8,7 +9,7 @@ interface BannerProps {
 const Banner = ({ title, imageSrc }: BannerProps) => {
   return (
     <div id="banner">
-      <img src={imageSrc} alt={`${title} banner`} />
+      <Image src={imageSrc} alt={`${title} banner`} />
       <h1>{title}</h1>
     </div>
   );

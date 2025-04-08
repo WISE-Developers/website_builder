@@ -1,4 +1,5 @@
 import Banner from '../components/Banner';
+import Image from '../components/Image';
 import '../styles/PrometheusSupport.css';
 
 const PrometheusSupport = () => {
@@ -26,8 +27,8 @@ const PrometheusSupport = () => {
           
           <div className="discord-container">
             <a href='https://discord.gg/HTfn6MGyCb' target="_blank" rel="noopener noreferrer">
-              <img src="/images/logo_prometheus.png" height="100px" alt="Prometheus logo" />
-              <img src="/images/Discord-Logo.png" height="100px" alt="Discord logo" />
+              <Image src="/images/logo_prometheus.png" height="100px" alt="Prometheus logo" />
+              <Image src="/images/Discord-Logo.png" height="100px" alt="Discord logo" />
             </a>
           </div>
         </div>

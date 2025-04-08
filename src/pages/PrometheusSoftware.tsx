@@ -1,5 +1,6 @@
 import Banner from '../components/Banner';
 import TabContent from '../components/TabContent';
+import Image from '../components/Image';
 import '../styles/PrometheusSoftware.css';
 
 const PrometheusSoftware = () => {
@@ -32,7 +33,7 @@ const PrometheusSoftware = () => {
             <li>Some folks are getting an Intel Error and are unable to find the download - Intel removed it from their site.</li>
             <li>Uninstall any previous version of the Intel C++ runtime from your computer as this tool will not overwrite newer versions.</li>
             <br/><br/>
-            <img src="/images/intel_error.png" alt="Intel Error" />
+            <Image src="/images/intel_error.png" alt="Intel Error" />
             <br/><br/>
             <p>You can grab the fix from here on our site:</p>
             <ul className="download">

@@ -1,4 +1,5 @@
 import Banner from '../components/Banner';
+import Image from '../components/Image';
 import '../styles/BurnP3PlusSupport.css';
 
 const BurnP3PlusSupport = () => {
@@ -28,8 +29,8 @@ const BurnP3PlusSupport = () => {
           
           <div className="discord-container">
             <a href='https://discord.gg/76QzY8eAYr' target="_blank" rel="noopener noreferrer">
-              <img src="/images/burnP3Plus-logo.png" height="50px" alt="BurnP3+ logo" />
-              <img src="/images/Discord-Logo.png" height="50px" alt="Discord logo" />
+              <Image src="/images/burnP3Plus-logo.png" height="50px" alt="BurnP3+ logo" />
+              <Image src="/images/Discord-Logo.png" height="50px" alt="Discord logo" />
             </a>
           </div>
         </div>

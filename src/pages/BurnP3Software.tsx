@@ -1,5 +1,6 @@
 import Banner from '../components/Banner';
 import TabContent from '../components/TabContent';
+import Image from '../components/Image';
 import '../styles/BurnP3Software.css';
 
 const BurnP3Software = () => {
@@ -20,7 +21,7 @@ const BurnP3Software = () => {
           <h3>Known Issues</h3>
           <div className="warning">
             <div className="w3-container w3-center">
-              <img src="/images/Burn_P3_Warning.jpeg" alt="Burn-P3 Warning" />
+              <Image src="/images/Burn_P3_Warning.jpeg" alt="Burn-P3 Warning" />
             </div>
             <br/><br/>
             <p>Please Note: You will experience this warning until we update the version check. Nothing to
