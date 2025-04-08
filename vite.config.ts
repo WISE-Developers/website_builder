@@ -9,6 +9,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    emptyOutDir: false, // Prevent clearing the dist directory before building
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
