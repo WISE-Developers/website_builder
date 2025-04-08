@@ -1,54 +1,141 @@
-# React + TypeScript + Vite
+# Fire Growth Modelling Website Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code and development environment for the [Fire Growth Modelling website](https://firegrowthmodel.ca/). The website is built using Vite, TypeScript, and React.
 
-Currently, two official plugins are available:
+## Repository Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository has a specific structure:
 
-## Expanding the ESLint configuration
+- The main repository (`website_builder`) contains all the source code, configurations, and development environment for building the website.
+- The `dist` folder is set up as a Git submodule pointing to the public repository [`firegrowthmodelling.ca`](https://github.com/WISE-Developers/firegrowthmodelling.ca).
+- When you build the website, the output is generated in this `dist` folder.
+- Changes committed and pushed from the `dist` folder will be published to the live website at [firegrowthmodel.ca](https://firegrowthmodel.ca/).
+- The `resources` folder inside the `dist` folder, contains the legacy COM documentation, dont alter it or remove it.
+- The `CNAME` file in the `dist' folder must remain there and not be altered, this is partof GHP configuration.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Important Notes
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### The dev (draft) website
+
+**The website builder only modifies the draft website, never the live one directly.**
+
+Changes to the live website only happen when you:
+
+1. Build the website
+2. Commit the changes in the `dist` folder
+3. Push those changes to the public repository
+
+### The dist folder
+
+**NEVER manually alter the contents of the `dist` folder, you can break the website or permanently lose resources.**
+
+## Development Workflow
+
+### Local Development
+
+To start the development server for local live development:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This will start a local development server, usually at `http://localhost:5173`. Changes you make to the source code will be reflected immediately in the browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Building the Website
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+When you're ready to build the website for production:
+
+```bash
+npm run build
 ```
+
+This command compiles and optimizes the website, placing the output in the `dist` folder (which is the submodule pointing to the public repository).
+
+### Testing the Build Locally
+
+To simulate GitHub Pages hosting locally and test the built website:
+
+```bash
+npm run testHosting
+```
+
+**Important:** Do NOT use LiveServer or similar tools to test the built website, as they may not accurately represent how the site will behave on GitHub Pages.
+
+### Publishing the Website
+
+After building the website, you need to commit and push the changes in the `dist` folder to publish them to the live website:
+
+```bash
+# Navigate to the dist folder
+cd dist
+
+# Add all changes
+git add .
+
+# Commit changes
+git commit -m "Update website with [describe your changes]"
+
+# Push to the public repository
+git push
+
+# Return to the main repository
+cd ..
+
+# Commit the updated submodule reference
+git add dist
+git commit -m "Update website build reference"
+git push
+```
+
+## Initial Setup for New Administrators
+
+If you're a new administrator cloning this repository for the first time:
+
+```bash
+# Clone the repository with its submodule
+git clone --recurse-submodules https://github.com/WISE-Developers/website_builder.git
+
+# Navigate to the repository
+cd website_builder
+
+# Install dependencies
+npm install
+```
+
+## Updating the Repository
+
+To keep your local copy up to date:
+
+```bash
+# Pull the latest changes
+git pull
+
+# Update the submodule
+git submodule update --remote
+```
+
+## Troubleshooting
+
+### Submodule Issues
+
+If you encounter issues with the submodule, you may need to reinitialize it:
+
+```bash
+git submodule update --init --recursive
+```
+
+### Build Issues
+
+If you're having trouble with the build process:
+
+1. Make sure you have the latest dependencies: `npm install`
+2. Clear the cache: `npm run clean` (if available) or manually delete the `.cache` directory
+3. Try building again: `npm run build`
+
+## Contact
+
+For questions or issues related to website development, please contact [appropriate contact information].
+
+## License
+
+[Appropriate license information]
