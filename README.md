@@ -39,13 +39,45 @@ To start the development server for local live development:
 npm run dev
 ```
 
-This will start a local development server, usually at `http://localhost:5173`. Changes you make to the source code will be reflected immediately in the browser.
+This will start a local development server, usually at `http://localhost:5173`. Changes you make to the source code will be reflected immediately in the browser - no refreshing needed!
+
+- be sure to alter page components eg:
+
+    ``` yaml
+    src/pages/FBANTools.tsx
+    ```
+
+    -or- subpages eg:
+
+    ``` yaml
+    src/pages/WISEDocumentation.tsx
+    ```
+
+- Inside the TSX file remember, you are NOT editing HTML or TypeScript you are in fact editing React JSX syntax, which is a JavaScript extension that allows you to write HTML-like code within JavaScript/TypeScript. For more info on this, check out: <https://react-typescript-cheatsheet.netlify.app/>
+- When you are done making changes and are ready to publish the changes, load and edit:
+
+    ``` yaml
+    src/components/Footer.tsx
+    ```
+
+    and change the date:
+
+    ``` html
+    <div id="footer">
+      <ul>
+        <li id="left"><a href="#top">Top of Page</a></li>
+        <li className="right" id="footer-date">Site updated: 2025-04-07</li>
+      </ul>
+    </div>
+    ```
+
+    to todays date.
 
 ### Building the Website
 
 When you're ready to build the website for production:
 
-```bash
+``` bash
 npm run build
 ```
 
