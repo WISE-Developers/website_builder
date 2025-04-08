@@ -1,0 +1,25 @@
+.content {
+    padding: 20px 0;
+  }
+  
+  .content h1 {
+    margin-bottom: 30px;
+  }
+  
+  .support-info {
+    margin: 20px 0;
+  }
+  
+  .support-info p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .support-info a {
+    color: var(--main-link-color, rgb(85, 171, 246));
+    text-decoration: none;
+  }
+  
+  .support-info a:hover {
+    text-decoration: underline;
+  }

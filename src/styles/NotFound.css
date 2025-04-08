@@ -1,0 +1,38 @@
+.not-found {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--main-title-color);
+}
+
+.not-found p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.not-found ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.not-found li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.not-found a {
+  color: var(--main-link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.not-found a:hover {
+  text-decoration: underline;
+}

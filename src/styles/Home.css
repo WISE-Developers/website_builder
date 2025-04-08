@@ -1,0 +1,46 @@
+.content {
+  padding: 20px 0;
+}
+
+.content h1 {
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.content h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.content a {
+  text-decoration: none;
+  color: var(--main-link-color);
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.content img.right {
+  max-width: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .content img.right {
+    float: none;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,45 @@
+.content {
+    padding: 20px 0;
+  }
+  
+  .featured section {
+    padding: 10px;
+  }
+  
+  .featured h1, .featured h2 {
+    color: var(--main-title-color, rgb(242, 170, 44));
+    margin: 20px 0 15px;
+  }
+  
+  .featured h1 {
+    font-size: 1.5em;
+  }
+  
+  .featured h2 {
+    font-size: 1.3em;
+  }
+  
+  .featured p {
+    margin: 15px 0;
+    line-height: 1.6;
+  }
+  
+  .featured ul {
+    list-style-type: disc;
+    margin: 15px 0;
+    padding-left: 30px;
+  }
+  
+  .featured li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .featured a {
+    color: var(--main-link-color, rgb(85, 171, 246));
+    text-decoration: none;
+  }
+  
+  .featured a:hover {
+    text-decoration: underline;
+  }

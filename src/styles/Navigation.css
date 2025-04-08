@@ -1,0 +1,125 @@
+#dropdownMenu {
+  clear: both;
+  float: right;
+  position: relative;
+  top: -18px;
+  height: 36px;
+  width: auto;
+  margin: 0 16px -18px 0;
+  padding: 0 14px;
+  background: #851719;
+  border-radius: 6px;
+  box-shadow: 1px 1px 2px 1px #333333;
+  z-index: 1000;
+}
+
+.menu {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+  float: left;
+  z-index: 1001;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a:link,
+.menu a:visited {
+  float: left;
+  font-size: 15px;
+  font-weight: normal;
+  color: #f3f3f3;
+  margin: 9px 14px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.menu a:hover,
+li.menuhover a:hover {
+  text-decoration: underline;
+}
+
+.menu ul {
+  position: absolute;
+  margin: 33px 0 0;
+  padding: 8px 0 0;
+  background: #f3f3f3;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  min-width: 100%;
+  list-style-type: none;
+  z-index: 1002;
+}
+
+.menu ul li {
+  text-align: left;
+  margin: 4px 16px;
+  padding: 0;
+  float: none;
+  display: block;
+}
+
+.menu ul li a:link,
+li.menuhover li a:visited {
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: none;
+}
+
+.menu ul li a:hover,
+li.menuhover li a:hover {
+  text-decoration: underline;
+  background: none;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  #dropdownMenu {
+    float: none;
+    position: static;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    height: auto;
+  }
+  
+  .menu {
+    flex-direction: column;
+  }
+  
+  .menu li {
+    float: none;
+    width: 100%;
+  }
+  
+  .menu a:link,
+  .menu a:visited {
+    float: none;
+    display: block;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .menu ul {
+    position: static;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

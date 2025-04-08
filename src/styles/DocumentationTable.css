@@ -1,0 +1,37 @@
+table.documentation {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  table.documentation td {
+    border: none;
+    border-collapse: collapse;
+    padding-bottom: 1em;
+    vertical-align: top;
+  }
+  
+  table.documentation img {
+    margin: 0 16px 0 0;
+    max-width: 100px;
+  }
+  
+  @media (max-width: 768px) {
+    table.documentation,
+    table.documentation tbody,
+    table.documentation tr,
+    table.documentation td {
+      display: block;
+      width: 100%;
+    }
+    
+    table.documentation img {
+      display: block;
+      margin: 0 auto 10px;
+    }
+    
+    table.documentation tr {
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 20px;
+    }
+  } 
