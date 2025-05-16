@@ -40,6 +40,10 @@ const BurnP3PlusSoftware = () => {
           <ul>
             <li><a href="https://burnp3.github.io/BurnP3Plus/getting_started.html">Getting Started</a></li>
           </ul>
+          <p>We delivered a course April 28-30 2025 at the University of Alberta. The materials from that course are available below.</p>
+          <ul>
+            <li><a href="https://spyd.com/fgm.ca/2025-04-28_BurnP3plusCourse.zip">2025-04-28 BurnP3+ Course Material</a></li>
+          </ul>
         </div>
       )
     },
