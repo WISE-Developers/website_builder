@@ -14,7 +14,7 @@ const REDappDocumentation = () => {
     {
       imageSrc: '/images/redapp_manual_img_sm.png',
       title: 'SpotWX Import Help',
-      linkUrl: '/assets/REDapp_7.26.0_spotwx_import_help.pdf',
+      linkUrl: '/assets/REDapp_spotwx_import_help.pdf',
       linkText: 'PDF',
       altText: 'SpotWX Import Help PDF'
     }
