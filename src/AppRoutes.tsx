@@ -30,6 +30,7 @@ import ProjectTeam from './pages/ProjectTeam';
 import CodeOfConduct from './pages/CodeOfConduct';
 import FBANTools from './pages/FBANTools';
 import NotFound from './pages/NotFound';
+import SpotWXImportHelp from './pages/SpotWXImportHelp';
 
 const AppRoutes = () => {
   return (
@@ -82,6 +83,7 @@ const AppRoutes = () => {
       <Route path="/project_team" element={<ProjectTeam />} />
       <Route path="/conduct" element={<CodeOfConduct />} />
       <Route path="/fban_tools" element={<FBANTools />} />
+      <Route path="/spotwx_import_help" element={<SpotWXImportHelp />} />
       
       {/* 404 page */}
       <Route path="*" element={<NotFound />} />

@@ -13,31 +13,50 @@ interface TabContentProps {
 }
 
 const TabContent: React.FC<TabContentProps> = ({ tabs }) => {
-  const [activeTab, setActiveTab] = useState<string>('');
+  const getInitialTab = () => {
+    const params = new URLSearchParams(window.location.search);
+    const tabParam = params.get('tab');
+    if (tabParam && tabs.some(tab => tab.id === tabParam)) {
+      return tabParam;
+    }
+    return tabs.find(tab => tab.isDefault)?.id || tabs[0]?.id || '';
+  };
+
+  const [activeTab, setActiveTab] = useState<string>(getInitialTab());
 
   useEffect(() => {
-    // Set the default tab on initial render
-    const defaultTab = tabs.find(tab => tab.isDefault)?.id || tabs[0]?.id || '';
-    setActiveTab(defaultTab);
+    const onPopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const tabParam = params.get('tab');
+      if (tabParam && tabs.some(tab => tab.id === tabParam)) {
+        setActiveTab(tabParam);
+      }
+    };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
   }, [tabs]);
 
   const handleTabClick = (tabId: string) => {
+    const params = new URLSearchParams(window.location.search);
+    params.set('tab', tabId);
+    const newUrl = `${window.location.pathname}${window.location.hash.split('?')[0]}?${params.toString()}`;
+    window.history.pushState({}, '', newUrl);
     setActiveTab(tabId);
-    return false; // Prevent default link behavior
+    return false;
   };
 
   return (
     <div className="tab-container">
       <ul id="tabs">
         {tabs.map(tab => (
-          <li key={tab.id}>
-            <a 
-              href={`#${tab.id}`} 
+          <li key={tab.id} style={{ display: 'inline' }}>
+            <button
+              type="button"
               onClick={() => handleTabClick(tab.id)}
-              className={activeTab === tab.id ? 'selected' : ''}
+              className={activeTab === tab.id ? 'selected tab-link' : 'tab-link'}
             >
               {tab.title}
-            </a>
+            </button>
           </li>
         ))}
       </ul>

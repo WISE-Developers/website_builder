@@ -4,13 +4,19 @@ import '../styles/REDappDocumentation.css';
 
 const REDappDocumentation = () => {
   const documentationItems = [
-
     {
       imageSrc: '/images/redapp_manual_img_sm.png',
       title: 'The REDapp User Guide 6.2 (2019)',
       linkUrl: 'https://spyd.com/fgm.ca/REDapp_6.2_User_Guide_1.pdf',
       linkText: 'PDF',
       altText: 'REDapp User Guide 6.2 PDF'
+    },
+    {
+      imageSrc: '/images/redapp_manual_img_sm.png',
+      title: 'SpotWX Import Help',
+      linkUrl: '/assets/REDapp_7.26.0_spotwx_import_help.pdf',
+      linkText: 'PDF',
+      altText: 'SpotWX Import Help PDF'
     }
   ];
 
@@ -35,6 +41,7 @@ const REDappDocumentation = () => {
         </div>
         
         <DocumentationTable items={documentationItems} />
+
         
       </div>
     </div>

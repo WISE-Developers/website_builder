@@ -33,6 +33,52 @@ ul#tabs {
     border-bottom: 2px solid var(--tab-hover-bg-color, rgb(255, 225, 0));
   }
   
+  ul#tabs li button {
+    background-color: var(--tab-bg-color, rgb(137, 87, 0));
+    border: 1px solid #ffbf00;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    color: #333333;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  ul#tabs li button:hover {
+    background-color: var(--tab-hover-bg-color, rgb(255, 225, 0));
+  }
+  
+  ul#tabs li button.selected {
+    color: #333333;
+    background-color: var(--tab-active-bg-color, rgb(255, 162, 0));
+    border-bottom: 2px solid var(--tab-hover-bg-color, rgb(255, 225, 0));
+  }
+  
+  ul#tabs li button.tab-link {
+    background-color: var(--tab-bg-color, rgb(137, 87, 0));
+    border: 1px solid #ffbf00;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    color: #333333;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  ul#tabs li button.tab-link:hover {
+    background-color: var(--tab-hover-bg-color, rgb(255, 225, 0));
+  }
+  
+  ul#tabs li button.selected.tab-link {
+    color: #333333;
+    background-color: var(--tab-active-bg-color, rgb(255, 162, 0));
+    border-bottom: 2px solid var(--tab-hover-bg-color, rgb(255, 225, 0));
+  }
+  
   div.tabContent {
     border: 1px solid #333333;
     border-radius: 0 6px 6px 6px;
@@ -54,6 +100,12 @@ ul#tabs {
     }
     
     ul#tabs li a {
+      display: block;
+      text-align: center;
+      border-radius: 6px;
+    }
+    
+    ul#tabs li button {
       display: block;
       text-align: center;
       border-radius: 6px;
