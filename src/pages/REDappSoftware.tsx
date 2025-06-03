@@ -11,19 +11,19 @@ const REDappSoftware = () => {
       children: (
         <div>
           <h3>Current Version</h3>
-          <p>REDapp V7.25.2 New Windows Release (2025-01-27)!!!</p>
+          <p>REDapp V7.26.1 New Release (2025-06-02)!!!</p>
 
           <ul className="download">
-            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.25.2/REDapp-7.25.2.exe" target="_blank" rel="noopener noreferrer">Windows [EXE 178 MB]</a></li>
+            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.26.1/REDapp-7.26.1.exe" target="_blank" rel="noopener noreferrer">Windows 10+ Installer [EXE 178 MB]</a></li>
+            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.26.1/REDapp-jar-with-dependencies.jar" target="_blank" rel="noopener noreferrer">Universal Portable no-install [JAR 126 MB]</a></li>
           </ul>
           
           <h3>Previous Version</h3>
-            <p>REDapp V7.2022.3-0 Log4J Safe (2022-03-13)</p>
-
+            
+            <p>REDapp V7.25.2 Windows Release (2025-01-27)</p>
             <ul className="download">
-            <li><a href="https://spyd.com/fgm.ca/REDapp-2022.3.0.zip" target="_blank" rel="noopener noreferrer">Portable no-install [ZIP 115 MB]</a></li>
-            <li><a href="https://spyd.com/fgm.ca/REDapp-All-20220313.jar" target="_blank" rel="noopener noreferrer">Universal Installer [JAR 117 MB]</a></li>
-            <li><a href="https://spyd.com/fgm.ca/REDapp-Windows-20220313.exe" target="_blank" rel="noopener noreferrer">Windows [EXE 114 MB]</a></li>
+              <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.25.2/REDapp-7.25.2.exe" target="_blank" rel="noopener noreferrer">Windows [EXE 178 MB]</a></li>
+
           </ul>
         </div>
       )
@@ -34,7 +34,7 @@ const REDappSoftware = () => {
       children: (
         <div>
           
-          <h2>System Requirements for REDapp V7.25.2 for Windows</h2>
+          <h2>System Requirements for REDapp V7.2x.x for Windows</h2>
 
         <div className="system-requirements">
         Minimum Java Version: Java is NOT required to install V7.25.2<br/>
@@ -42,19 +42,7 @@ const REDappSoftware = () => {
         Minimum OS Required: Windows 10 or later.
         </div>
 
-           <h2>System Requirements for REDapp V7.2022.3-0</h2>
-
-           <div className="system-requirements">
-            Minimum Java Version: Java SE 8 (Oracle preferred). Update 151 or better.<br/>
-            <br/>
-            Minimum OS Required:<br/>
-            Windows 7 or later.<br/>
-            Intel-based Mac OS X 10.8.3 (Mountain Lion) or later.<br/>
-            Oracle Linux 5.5+, 6.x (32-bit), 6.x (64-bit).<br/>
-            Red Hat Enterprise Linux 5.5+, 6.x (32-bit), 6.x (64-bit).<br/>
-            Ubuntu Linux 12.04 LTS or later.<br/>
-            Suse Linux Enterprise Server 10 SP2, 11.x.<br/>
-          </div>
+      
           
         </div>
       )
@@ -64,7 +52,32 @@ const REDappSoftware = () => {
       title: 'Release Notes',
       children: (
         <div>
+          <p>REDapp V7.26.1</p>
+          
+ 
 
+
+
+        <div className="field field-name-body field-type-text-with-summary field-label-hidden">
+          <div className="field-items">
+            <div className="field-item even" property="content:encoded">
+              <div>&nbsp;</div>
+              <div>
+                <h3>🚀 New Features or Enhancements in REDapp V7.26.1:</h3>
+                <p/><li>Added reference to a support document for importing SpotWX weather data into the Forecast tab</li>
+                <p>&nbsp;</p>
+                <h2>🐛 Bug Fixes in in REDapp V7.26.1:</h2>
+                <p/><li>Removed the weather tab</li>
+                <p/><li>renamed the statistics tab to Forecast<p></p>
+                <p></p></li><li>minor UX updates to the main screen<p></p>
+                <p></p></li><li>Improve the location system to use an online service if possible<p></p>
+              </li></div>
+
+            </div>
+          </div>
+        </div>
+        <p>&nbsp;</p>
+      <hr/>
 
         <p>REDapp V7.25.2 for Windows</p>
         <div className="field field-name-body field-type-text-with-summary field-label-hidden">
