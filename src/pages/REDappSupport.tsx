@@ -13,7 +13,7 @@ const REDappSupport = () => {
           <p>
             Contact the project via{' '}
             <a 
-              href="https://github.com/WISE-Developers/REDapp/issues/new?assignees=spydmobile%2Cnealmcloughlin%2CBadgerOnABike&labels=Communication+Required&template=project_contact_form.yml&title=%5BContact%5D+Re%3A+REDapp" 
+              href="https://github.com/WISE-Developers/REDapp/issues/new?assignees=spydmobile%2Cnealmcloughlin%2CBadgerOnABike&labels=Communication+Required&template=redapp_contact_form.yml&title=%5BContact%5D+Re%3A+REDapp" 
               target="_blank" 
               rel="noopener noreferrer"
             >
