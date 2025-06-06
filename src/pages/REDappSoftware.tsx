@@ -15,7 +15,11 @@ const REDappSoftware = () => {
 
           <ul className="download">
             <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.26.1/REDapp-7.26.1.exe" target="_blank" rel="noopener noreferrer">Windows 10+ Installer [EXE 178 MB]</a></li>
-            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.26.1/REDapp-jar-with-dependencies.jar" target="_blank" rel="noopener noreferrer">Universal Portable no-install [JAR 126 MB]</a></li>
+                        <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.26.1/REDapp-7.26.1.msi" target="_blank" rel="noopener noreferrer">Windows 10+ Installer [MSI 177 MB]</a></li>
+            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.26.1/REDapp-jar-with-dependencies.jar" target="_blank" rel="noopener noreferrer">Universal Portable no-install [JAR 126 MB]</a></li>            
+
+
+
           </ul>
           
           <h3>Previous Version</h3>
