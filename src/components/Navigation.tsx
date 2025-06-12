@@ -28,7 +28,7 @@ const Navigation = () => {
           onMouseOut={handleMouseOut}
           className={activeMenu === 'prometheus' ? 'menuhover' : ''}
         >
-          <Link to="/prometheus_overview">Prometheus</Link>
+          <Link to="/prometheus_overview">Prometheus EOL</Link>
           <ul style={{ display: activeMenu === 'prometheus' ? 'block' : 'none' }}>
             <li><Link to="/prometheus_overview">Overview</Link></li>
             <li><Link to="/prometheus_documentation">Documentation</Link></li>

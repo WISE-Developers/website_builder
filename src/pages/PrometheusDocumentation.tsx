@@ -22,7 +22,7 @@ const PrometheusDocumentation = () => {
 
   return (
     <div>
-      <Banner title="Prometheus" imageSrc="/images/prometheus_banner.jpg" />
+      <Banner title="Prometheus EOL" imageSrc="/images/prometheus_banner.jpg" />
       
       <div className="content">
         <h1>Documentation</h1>

@@ -5,12 +5,15 @@ import '../styles/PrometheusOverview.css';
 const PrometheusOverview = () => {
   return (
     <div>
-      <Banner title="Prometheus" imageSrc="/images/prometheus_banner.jpg" />
+      <Banner title="Prometheus EOL" imageSrc="/images/prometheus_banner.jpg" />
       
       <div className="content w3-justify">
         <h1>Overview</h1>
         <div className="warning">
-          <p>The COM (Common Object Model) is a deprecated Microsoft Windows technology. The <Link to="/wise">W.I.S.E.</Link> project is the modern, open-source successor to Prometheus and the COM.</p>
+          <p>The Prometheus Wildfire Model is now at "End of Life". The last binary released (2023.06.01) is the final EOL version.</p>
+          <p> <Link to="/prometheus_eol">What does End of Life mean?</Link> </p>
+          <p> <Link to="/prometheus_software">Download Prometheus EOL</Link> </p>
+          <p>The COM (Common Object Model) was the heart of Prometheus and is now a deprecated Microsoft Windows technology. The <Link to="/wise">W.I.S.E.</Link> project is the modern, open-source successor to the Prometheus COM.</p>
         </div>
         
         <img className="right" src="/images/logo_prometheus.png" alt="Prometheus Logo" />
@@ -66,8 +69,8 @@ const PrometheusOverview = () => {
         <p>To facilitate the use of these low-level interfaces, an umbrella or wrapper COM was developed. This
           high-level interface is called PrometheusCOM. It provides a more user-friendly interface for programmers to
           communicate with the low level COMs. Examples of software applications that integrate <i>Prometheus</i>COM
-          components include Burn-P3, Pandora, Pegasus, and SFMS. COM Programmer's Documentation can be accessed 
-          <a href="../resources/com/PrometheusCOM/index.html" target="_blank" rel="noopener noreferrer">on-line</a>.</p>
+          components include Burn-P3, Pandora, Pegasus, and SFMS. COM Programmer's Documentation can be accessed
+           <a href="../resources/com/PrometheusCOM/index.html" target="_blank" rel="noopener noreferrer"> on-line</a>.</p>
       </div>
     </div>
   );

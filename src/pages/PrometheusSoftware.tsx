@@ -11,11 +11,11 @@ const PrometheusSoftware = () => {
       isDefault: true,
       children: (
         <div>
-          <h3>Current Version</h3>
-          <p>Prometheus 2021.12.03 <span className="w3-tag w3-padding w3-round-large w3-red w3-center">Log4J Safe</span> for 64-bit Windows operating systems was released December 23, 2021.</p>
-
+          <h3>Final EOL Version</h3>
+          {/* <p>Prometheus 2021.12.03 <span className="w3-tag w3-padding w3-round-large w3-red w3-center">Log4J Safe</span> for 64-bit Windows operating systems was released December 23, 2021.</p> */}
+          <p>Prometheus 2023.06.01 <span className="w3-tag w3-padding w3-round-large w3-red w3-center">EOL</span> for 64-bit Windows operating systems was built June 1, 2023.</p>
           <ul className="download">
-            <li><a className="download" href="https://spyd.com/fgm.ca/Prometheus_2021.12.03.exe">Download Prometheus 2021.12.03</a></li>
+            <li><a className="download" href="https://spyd.com/fgm.ca/Prometheus_2023.06.01_EOL.exe">Download Prometheus EOL</a></li>
           </ul>
 
           <h3>Important Installation Instructions</h3>
@@ -24,12 +24,13 @@ const PrometheusSoftware = () => {
             <li>Install all software prerequisites on a 64-bit Windows computer that meets or exceeds minimum system requirements and perform a system restart.</li>
             <li>Log on to your computer as a system administrator.</li>
             <li>Uninstall any previous version of the Prometheus application from your computer.</li>
-            <li>Close all open applications and run <b>prometheus_2021.12.03.exe</b> <span className="file">[EXE - 56 MB]</span>. A Setup Wizard will guide you through the installation.</li>
+            <li>Close all open applications and run <b>Prometheus_2023.06.01_EOL.exe</b> <span className="file">[EXE - 67 MB]</span>. A Setup Wizard will guide you through the installation.</li>
           </ul>
 
           <h3>Known Issues</h3>
 
           <ul>
+            <li> Additional gotchas & workarounds coming soon from Brett</li>
             <li>Some folks are getting an Intel Error and are unable to find the download - Intel removed it from their site.</li>
             <li>Uninstall any previous version of the Intel C++ runtime from your computer as this tool will not overwrite newer versions.</li>
             <br/><br/>
@@ -120,18 +121,30 @@ const PrometheusSoftware = () => {
       title: 'Release Notes',
       children: (
         <div>
-          <h3>Changes in Prometheus 2021.12.03</h3>
+          <h3>Changes in Prometheus EOL</h3>
     
-          <h4>New Features</h4>
+          <h4>No New Features</h4>
           
-          <ul>
-            <li>Coming Soon.</li>
-          </ul>
-
           <h4>Bug Fixes</h4>
           <ul>
-            <li>Coming Soon.</li>
+            <li>Fixed the import FGMJ (WISE model) Functions</li>             
+            <ol>The FGMJ outputs of WISE and products like FireCast that leverage WISE were unable to be read by the Prometheus. A bug fix was issued in 2023.06.01 to ensure that WISE generated FGMJ files could be read by Prometheus.</ol>
           </ul>
+
+          <h4> Known Issues and Work Arounds (If Available)</h4>
+        <ul>
+          <li>Fires intersecting resulting in the fire that is intersected stopping growth.</li>
+            <ol>
+              <li>Fix this by splitting the multiple polygon ignition into individual ignitions and run the scenarios independently</li>
+              <li>This does require the modeller to then dissolve by date time but runs faster overall.</li>
+            </ol>
+            <li> The component window is so full that right clicking brings up a view format menu.</li>
+            <ol>When this happens, make the Prometheus window smaller keeping it to the top half the monitor and then expected behaviour will occur.</ol>
+          <li>Unable to read a weather file that has weather in it.</li>
+            <ol>Make sure you have weather starting at midnight.</ol>
+          <li>KML output makes Prometheus not responsive</li>
+            <ol>It is working, it may just take a long time.</ol>
+        </ul>
         </div>
       )
     },
@@ -142,9 +155,9 @@ const PrometheusSoftware = () => {
         <div>
           <h3>Prometheus: the Canadian Wildland Fire Growth Simulation Model</h3>
 
-          <p>Version 6.2.4, Copyright © 2000 - 2019 The W.I.S.E. Development Team</p>
+          <p>Version 2023.06.01 EOL, Copyright © 2000 - 2023 The W.I.S.E. Development Team</p>
 
-          <p>Release date: January 13, 2019</p>
+          <p>Release date: June 1, 2023</p>
 
           <p>Prometheus is a wildland fire growth simulation model first released in 2002 with support from fire management agencies, research institutes, and industry partners across Canada. A project steering committee was responsible for coordinating early development of the Prometheus application. Alberta Forestry, Parks and Tourism is now the lead agency and custodian with financial and in-kind support from the Canadian Forest Service, Government of Northwest Territories, Government of Ontario, and Scion Research. The Prometheus application and Prometheus COM are freeware software.</p>
         </div>
@@ -154,7 +167,7 @@ const PrometheusSoftware = () => {
 
   return (
     <div>
-      <Banner title="Prometheus" imageSrc="/images/prometheus_banner.jpg" />
+      <Banner title="Prometheus EOL" imageSrc="/images/prometheus_banner.jpg" />
       
       <div className="content">
         <h1>Software</h1>
