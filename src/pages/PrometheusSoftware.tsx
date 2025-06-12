@@ -30,7 +30,18 @@ const PrometheusSoftware = () => {
           <h3>Known Issues</h3>
 
           <ul>
-            <li> Additional gotchas & workarounds coming soon from Brett</li>
+             <li>Fires intersecting resulting in the fire that is intersected stopping growth.</li>
+            <ol>
+              <li>Fix this by splitting the multiple polygon ignition into individual ignitions and run the scenarios independently</li>
+              <li>This does require the modeller to then dissolve by date time but runs faster overall.</li>
+            </ol>
+            <li> The component window is so full that right clicking brings up a view format menu.</li>
+            <ol>When this happens, make the Prometheus window smaller keeping it to the top half the monitor and then expected behaviour will occur.</ol>
+          <li>Unable to read a weather file that has weather in it.</li>
+            <ol>Make sure you have weather starting at midnight.</ol>
+          <li>KML output makes Prometheus not responsive</li>
+            <ol>It is working, it may just take a long time.</ol>
+            
             <li>Some folks are getting an Intel Error and are unable to find the download - Intel removed it from their site.</li>
             <li>Uninstall any previous version of the Intel C++ runtime from your computer as this tool will not overwrite newer versions.</li>
             <br/><br/>
