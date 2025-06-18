@@ -30,6 +30,13 @@ const PrometheusSoftware = () => {
           <h3>Known Issues</h3>
 
           <ul>
+             <li> Rasters will not import unless a nodata flag of -9999 is set</li>
+          <li> Prometheus GDAL version will conflict with other GIS programs (R, QGIS, ArcGIS)</li>
+          <ol>
+              <li>Fix with Sys.setenv() in R prior to loading GIS packages</li>
+              <li>Issue stems from Prometheus hijacking the GDAL_DATA and PROJ_LIB environment variables</li>
+              
+            </ol>
              <li>Fires intersecting resulting in the fire that is intersected stopping growth.</li>
             <ol>
               <li>Fix this by splitting the multiple polygon ignition into individual ignitions and run the scenarios independently</li>
@@ -144,6 +151,13 @@ const PrometheusSoftware = () => {
 
           <h4> Known Issues and Work Arounds (If Available)</h4>
         <ul>
+          <li> Rasters will not import unless a nodata flag of -9999 is set</li>
+          <li> Prometheus GDAL version will conflict with other GIS programs (R, QGIS, ArcGIS)</li>
+          <ol>
+              <li>Fix with Sys.setenv() in R prior to loading GIS packages</li>
+              <li>Issue stems from Prometheus hijacking the GDAL_DATA and PROJ_LIB environment variables</li>
+              
+            </ol>
           <li>Fires intersecting resulting in the fire that is intersected stopping growth.</li>
             <ol>
               <li>Fix this by splitting the multiple polygon ignition into individual ignitions and run the scenarios independently</li>
