@@ -6,7 +6,7 @@ const Footer = () => {
     <div id="footer">
       <ul>
         <li id="left"><a href="#top">Top of Page</a></li>
-        <li className="right" id="footer-date">Site updated: 2025-06-18</li>
+        <li className="right" id="footer-date">Site updated: 2025-06-24</li>
       </ul>
     </div>
   );
