@@ -14,8 +14,8 @@ const REDappSoftware = () => {
           <p>REDapp V7.27.2 Update (2025-10-15)!!!</p>
 
           <ul className="download">
-            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.27.0/REDapp-7.27.2.msi" target="_blank" rel="noopener noreferrer">Windows 10+ Installer [MSI 177 MB]</a></li>
-            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.27.0/REDapp-7_27_2_jar-with-dependencies.jar" target="_blank" rel="noopener noreferrer">Universal Portable no-install [JAR 125 MB]</a></li>
+            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.27.2/REDapp-7.27.2.msi" target="_blank" rel="noopener noreferrer">Windows 10+ Installer [MSI 177 MB]</a></li>
+            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.27.2/REDapp-7_27_2_jar-with-dependencies.jar" target="_blank" rel="noopener noreferrer">Universal Portable no-install [JAR 125 MB]</a></li>
           </ul>
 
           <h3>Previous Version</h3>
