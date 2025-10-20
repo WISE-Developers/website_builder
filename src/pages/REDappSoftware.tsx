@@ -11,6 +11,15 @@ const REDappSoftware = () => {
       children: (
         <div>
           <h3>Current Version</h3>
+          <p>REDapp V7.27.2 Update (2025-10-15)!!!</p>
+
+          <ul className="download">
+            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.27.0/REDapp-7.27.2.msi" target="_blank" rel="noopener noreferrer">Windows 10+ Installer [MSI 177 MB]</a></li>
+            <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.27.0/REDapp-7_27_2_jar-with-dependencies.jar" target="_blank" rel="noopener noreferrer">Universal Portable no-install [JAR 125 MB]</a></li>
+          </ul>
+
+          <h3>Previous Version</h3>
+
           <p>REDapp V7.27.0 New Release (2025-08-18)!!!</p>
 
           <ul className="download">
@@ -18,8 +27,7 @@ const REDappSoftware = () => {
             <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.27.0/REDapp-7_27_0_jar-with-dependencies.jar" target="_blank" rel="noopener noreferrer">Universal Portable no-install [JAR 126 MB]</a></li>
           </ul>
 
-           <h3>Previous Version</h3>
-          <p>REDapp V7.26.1 New Release (2025-06-02)!!!</p>
+          {/* <p>REDapp V7.26.1 New Release (2025-06-02)!!!</p>
 
           <ul className="download">
             <li><a href="https://github.com/WISE-Developers/REDapp/releases/download/7.26.1/REDapp-7.26.1.exe" target="_blank" rel="noopener noreferrer">Windows 10+ Installer [EXE 178 MB]</a></li>
@@ -28,9 +36,9 @@ const REDappSoftware = () => {
 
 
 
-          </ul>
+          </ul> */}
 
-         
+
         </div>
       )
     },
@@ -57,22 +65,35 @@ const REDappSoftware = () => {
       id: 'release_notes',
       title: 'Release Notes',
       children: (
-        <div>  <p>REDapp V7.27.0</p>
-
-
-
-
-
+        <div>
+          <p>REDapp Update V7.27.2</p>
           <div className="field field-name-body field-type-text-with-summary field-label-hidden">
             <div className="field-items">
               <div className="field-item even" property="content:encoded">
-                <div>&nbsp;</div>
+
+                <div>
+                  <h2>🐛 Bug Fixes in in REDapp V7.27.2:</h2>
+                  <p /><li>Removed the Map tab</li>
+                  <p /><li>Removed references to the map tab (buttons that transferred to it, etc.)</li>
+                  <p /><li>Corrected the UI for secondary outputs and spotting outputs to ensure the text boxes remain usable at the default window size</li>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <p>&nbsp;</p>
+          <hr />
+          <p>REDapp V7.27.0</p>
+          <div className="field field-name-body field-type-text-with-summary field-label-hidden">
+            <div className="field-items">
+              <div className="field-item even" property="content:encoded">
+
                 <div>
                   <h3>🚀 New Features or Enhancements in REDapp V7.27.0:</h3>
                   <p /><li>Full integration for importing SpotWX weather data into the Forecast tab via SpotWx API - Added a tool on the Forecast tab under Import Weather to automatically get weather data from SpotWx based on the ignition location.</li>
                   <p /><li>Added Spanish language support.</li>
                   <p /><li>The entire user interface is now resizable by dragging the corner or pressing the maximise button.</li>
-          
+
 
 
 
@@ -84,7 +105,8 @@ const REDappSoftware = () => {
                   <p /><li>renamed the statistics tab to Forecast<p></p>
                     <p></p></li><li>Further minor UX updates to the main screen - Updated the user interface to clean up the buttons in the lower-right corner<p></p>
                     <p></p></li><li>Further Improve the location system to use an online service if possible<p></p>
-                  </li></div>
+                  </li>
+                </div>
 
               </div>
             </div>
