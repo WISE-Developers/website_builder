@@ -1,4 +1,5 @@
 import Banner from '../components/Banner';
+import { Link } from 'react-router-dom';
 import TabContent from '../components/TabContent';
 import Image from '../components/Image';
 import '../styles/BurnP3Software.css';
@@ -148,11 +149,14 @@ const BurnP3Software = () => {
 
   return (
     <div>
-      <Banner title="Burn-P3" imageSrc="/images/burnp3_banner.jpg" />
+      <Banner title="Burn-P3 (Legacy)" imageSrc="/images/burnp3_banner.jpg" />
       
       <div className="content">
         <h1>Software</h1>
         <TabContent tabs={tabs} />
+        <div className="warning">
+            <p>The <Link to="/burnp3plus">BurnP3+</Link> project is the modern, open-source successor to Burn-P3.</p>
+          </div>
       </div>
     </div>
   );

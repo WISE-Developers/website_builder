@@ -1,14 +1,17 @@
 import Banner from '../components/Banner';
+import { Link } from 'react-router-dom';
 import '../styles/BurnP3Support.css';
 
 const BurnP3Support = () => {
   return (
     <div>
-      <Banner title="Burn-P3" imageSrc="/images/burnp3_banner.jpg" />
+      <Banner title="Burn-P3 (Legacy)" imageSrc="/images/burnp3_banner.jpg" />
       
       <div className="content">
         <h1>Technical Support</h1>
-        
+        <div className="warning">
+            <p>The <Link to="/burnp3plus">BurnP3+</Link> project is the modern, open-source successor to Burn-P3.</p>
+          </div>
         <div className="support-info">
           <p><b>Peter Englefield</b></p>
           <p>

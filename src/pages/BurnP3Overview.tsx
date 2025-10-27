@@ -5,12 +5,13 @@ import '../styles/BurnP3Overview.css';
 const BurnP3Overview = () => {
   return (
     <div>
-      <Banner title="Burn-P3" imageSrc="/images/burnp3_banner.jpg" />
+      <Banner title="Burn-P3 (Legacy)" imageSrc="/images/burnp3_banner.jpg" />
       
       <div className="content">
         <h1>Overview</h1>
         <div className="warning">
-          <p>The COM (Common Object Model) is a deprecated Microsoft Windows technology. The <Link to="/burnp3plus">BurnP3+</Link> project is the modern, open-source successor to Burn-P3.</p>
+          <p>The <Link to="/burnp3plus">BurnP3+</Link> project is the modern, open-source successor to Burn-P3 (Legacy).
+          The COM (Common Object Model) is a deprecated Microsoft Windows technology.</p>
         </div>
         
         <img className="right" src="/images/grid_output_burnp3.jpg" alt="Burn-P3 Grid Output" />
