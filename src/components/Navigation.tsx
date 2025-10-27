@@ -22,7 +22,6 @@ const Navigation = () => {
           <Link to="/">Home</Link>
           <Link to="/project_team">Team</Link>
 
-       
         <li
           onMouseOver={() => handleMouseOver('prometheus')}
           onMouseOut={handleMouseOut}
@@ -38,7 +37,6 @@ const Navigation = () => {
           </ul>
         </li>
 
-
         <li
           onMouseOver={() => handleMouseOver('wise')}
           onMouseOut={handleMouseOut}
@@ -52,7 +50,6 @@ const Navigation = () => {
             <li><Link to="/wise_support">Support</Link></li>
           </ul>
         </li>
-
 
         <li
           onMouseOver={() => handleMouseOver('redapp')}
@@ -68,22 +65,6 @@ const Navigation = () => {
           </ul>
         </li>
 
-
-
-
-        <li
-          onMouseOver={() => handleMouseOver('burnp3')}
-          onMouseOut={handleMouseOut}
-          className={activeMenu === 'burnp3' ? 'menuhover' : ''}
-        >
-          <Link to="/burnp3_overview">Burn-P3</Link>
-          <ul style={{ display: activeMenu === 'burnp3' ? 'block' : 'none' }}>
-            <li><Link to="/burnp3_overview">Overview</Link></li>
-            <li><Link to="/burnp3_documentation">Documentation</Link></li>
-            <li><Link to="/burnp3_software">Software</Link></li>
-            <li><Link to="/burnp3_support">Support</Link></li>
-          </ul>
-        </li>
         <li
           onMouseOver={() => handleMouseOver('burnp3plus')}
           onMouseOut={handleMouseOut}
@@ -97,6 +78,7 @@ const Navigation = () => {
             <li><Link to="/burnp3plus_support">Support</Link></li>
           </ul>
         </li>
+        
         <li
           onMouseOver={() => handleMouseOver('pandora')}
           onMouseOut={handleMouseOut}
@@ -108,6 +90,20 @@ const Navigation = () => {
             <li><Link to="/pandora_documentation">Documentation</Link></li>
             <li><Link to="/pandora_software">Software</Link></li>
             <li><Link to="/pandora_support">Support</Link></li>
+          </ul>
+        </li>
+
+        <li
+          onMouseOver={() => handleMouseOver('burnp3')}
+          onMouseOut={handleMouseOut}
+          className={activeMenu === 'burnp3' ? 'menuhover' : ''}
+        >
+          <Link to="/burnp3_overview">Burn-P3 (Legacy)</Link>
+          <ul style={{ display: activeMenu === 'burnp3' ? 'block' : 'none' }}>
+            <li><Link to="/burnp3_overview">Overview</Link></li>
+            <li><Link to="/burnp3_documentation">Documentation</Link></li>
+            <li><Link to="/burnp3_software">Software</Link></li>
+            <li><Link to="/burnp3_support">Support</Link></li>
           </ul>
         </li>
         <li><Link to="/fban_tools">FBAN Tools</Link></li>

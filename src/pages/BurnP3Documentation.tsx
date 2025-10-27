@@ -1,4 +1,5 @@
 import Banner from '../components/Banner';
+import { Link } from 'react-router-dom';
 import DocumentationTable from '../components/DocumentationTable';
 import '../styles/BurnP3Documentation.css';
 
@@ -22,13 +23,17 @@ const BurnP3Documentation = () => {
 
   return (
     <div>
-      <Banner title="Burn-P3" imageSrc="/images/burnp3_banner.jpg" />
+      <Banner title="Burn-P3 (Legacy)" imageSrc="/images/burnp3_banner.jpg" />
       
       <div className="content">
         <h1>Documentation</h1>
         <DocumentationTable items={documentationItems} />
+        <div className="warning">
+          <p>The <Link to="/burnp3plus">BurnP3+</Link> project is the modern, open-source successor to Burn-P3.</p>
+          </div>
       </div>
     </div>
+          
   );
 };
 
