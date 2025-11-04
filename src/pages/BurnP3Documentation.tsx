@@ -7,7 +7,7 @@ const BurnP3Documentation = () => {
     {
       imageSrc: '/images/user_manual_version_4.7.jpg',
       title: 'Natural Resources Canada. 2017. Burn-P3 Version 4.7 User\'s manual. 59 p.',
-      linkUrl: 'https://spyd.com/fgm.ca/UMen_BurnP3_V4_7.pdf',
+      linkUrl: 'https://fgmfiles.spyd.com/UMen_BurnP3_V4_7.pdf',
       linkText: 'PDF',
       altText: 'User Manual Cover'
     },
@@ -23,7 +23,7 @@ const BurnP3Documentation = () => {
   return (
     <div>
       <Banner title="Burn-P3" imageSrc="/images/burnp3_banner.jpg" />
-      
+
       <div className="content">
         <h1>Documentation</h1>
         <DocumentationTable items={documentationItems} />

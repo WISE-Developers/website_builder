@@ -15,11 +15,11 @@ const PrometheusSoftware = () => {
           {/* <p>Prometheus 2021.12.03 <span className="w3-tag w3-padding w3-round-large w3-red w3-center">Log4J Safe</span> for 64-bit Windows operating systems was released December 23, 2021.</p> */}
           <p>Prometheus 2023.06.01 <span className="w3-tag w3-padding w3-round-large w3-red w3-center">EOL</span> for 64-bit Windows operating systems was built June 1, 2023.</p>
           <ul className="download">
-            <li><a className="download" href="https://spyd.com/fgm.ca/Prometheus_2023.06.01_EOL.exe">Download Prometheus EOL</a></li>
+            <li><a className="download" href="https://fgmfiles.spyd.com/Prometheus_2023.06.01_EOL.exe">Download Prometheus EOL</a></li>
           </ul>
 
           <h3>Important Installation Instructions</h3>
-          
+
           <ul>
             <li>Install all software prerequisites on a 64-bit Windows computer that meets or exceeds minimum system requirements and perform a system restart.</li>
             <li>Log on to your computer as a system administrator.</li>
@@ -30,35 +30,35 @@ const PrometheusSoftware = () => {
           <h3>Known Issues</h3>
 
           <ul>
-             <li> Rasters will not import unless a nodata flag of -9999 is set</li>
-          <li> Prometheus GDAL version will conflict with other GIS programs (R, QGIS, ArcGIS)</li>
-          <ol>
+            <li> Rasters will not import unless a nodata flag of -9999 is set</li>
+            <li> Prometheus GDAL version will conflict with other GIS programs (R, QGIS, ArcGIS)</li>
+            <ol>
               <li>Fix with Sys.setenv() in R prior to loading GIS packages</li>
               <li>Issue stems from Prometheus hijacking the GDAL_DATA and PROJ_LIB environment variables</li>
-              
+
             </ol>
-             <li>Fires intersecting resulting in the fire that is intersected stopping growth.</li>
+            <li>Fires intersecting resulting in the fire that is intersected stopping growth.</li>
             <ol>
               <li>Fix this by splitting the multiple polygon ignition into individual ignitions and run the scenarios independently</li>
               <li>This does require the modeller to then dissolve by date time but runs faster overall.</li>
             </ol>
             <li> The component window is so full that right clicking brings up a view format menu.</li>
             <ol>When this happens, make the Prometheus window smaller keeping it to the top half the monitor and then expected behaviour will occur.</ol>
-          <li>Unable to read a weather file that has weather in it.</li>
+            <li>Unable to read a weather file that has weather in it.</li>
             <ol>Make sure you have weather starting at midnight.</ol>
-          <li>KML output makes Prometheus not responsive</li>
+            <li>KML output makes Prometheus not responsive</li>
             <ol>It is working, it may just take a long time.</ol>
-            
+
             <li>Some folks are getting an Intel Error and are unable to find the download - Intel removed it from their site.</li>
             <li>Uninstall any previous version of the Intel C++ runtime from your computer as this tool will not overwrite newer versions.</li>
-            <br/><br/>
+            <br /><br />
             <Image src="/images/intel_error.png" alt="Intel Error" />
-            <br/><br/>
+            <br /><br />
             <p>You can grab the fix from here on our site:</p>
             <ul className="download">
-              <li><a className="download" href="https://spyd.com/fgm.ca/libs/w_dpcpp_cpp_runtime_p_2021.3.0.3372.exe">Download Intel C++ runtime 2021.3.0.3372</a></li>
+              <li><a className="download" href="https://fgmfiles.spyd.com/libs/w_dpcpp_cpp_runtime_p_2021.3.0.3372.exe">Download Intel C++ runtime 2021.3.0.3372</a></li>
             </ul>
-            
+
             <li>Some references to old versions are found in the help.</li>
           </ul>
 
@@ -66,7 +66,7 @@ const PrometheusSoftware = () => {
 
           <p>Click the following link to download a sample data set for the 2001 Dogrib fire. The data set contains a README document, model input files, and an example fire growth model project.</p>
           <ul>
-            <li><a href="https://spyd.com/fgm.ca/Dogrib_v624.zip">Dogrib_v624</a> <span className="file"> [ZIP - 5.77 MB]</span></li>
+            <li><a href="https://fgmfiles.spyd.com/Dogrib_v624.zip">Dogrib_v624</a> <span className="file"> [ZIP - 5.77 MB]</span></li>
           </ul>
         </div>
       )
@@ -89,23 +89,23 @@ const PrometheusSoftware = () => {
             <tbody>
               <tr>
                 <td>Operating System*</td>
-                <td>64-bit Windows 7 or<br/>Windows Server 2008</td>
-                <td>64-bit Windows 10/11 or<br/>Windows Server 2008 R2</td>
+                <td>64-bit Windows 7 or<br />Windows Server 2008</td>
+                <td>64-bit Windows 10/11 or<br />Windows Server 2008 R2</td>
               </tr>
               <tr>
                 <td>Microsoft Software</td>
-                <td>.NET Framework 4.6<br/>and<br/>Visual C++ 2017 Redistributable (x64)</td>
-                <td>.NET Framework 4.7<br/>and<br/>Visual C++ 2017 Redistributable (x64)</td>
+                <td>.NET Framework 4.6<br />and<br />Visual C++ 2017 Redistributable (x64)</td>
+                <td>.NET Framework 4.7<br />and<br />Visual C++ 2017 Redistributable (x64)</td>
               </tr>
               <tr>
                 <td>Java</td>
-                <td>OpenJDK for Windows (x64)<br/>(Update 21) <a href="https://aka.ms/download-jdk/microsoft-jdk-21.0.5-windows-x64.msi">21.0.5</a></td>
+                <td>OpenJDK for Windows (x64)<br />(Update 21) <a href="https://aka.ms/download-jdk/microsoft-jdk-21.0.5-windows-x64.msi">21.0.5</a></td>
                 <td></td>
               </tr>
               <tr>
                 <td>Intel&#174; Software</td>
-                <td>2019 C++ Redistributable Library for Windows (x64)<br/>(Initial Release: 19.0.117)</td>
-                <td>2019 C++ Redistributable Library for Windows (x64)<br/>(Update 1: 19.1.144)</td>
+                <td>2019 C++ Redistributable Library for Windows (x64)<br />(Initial Release: 19.0.117)</td>
+                <td>2019 C++ Redistributable Library for Windows (x64)<br />(Update 1: 19.1.144)</td>
               </tr>
               <tr>
                 <td>Processors</td>
@@ -140,36 +140,36 @@ const PrometheusSoftware = () => {
       children: (
         <div>
           <h3>Changes in Prometheus EOL</h3>
-    
+
           <h4>No New Features</h4>
-          
+
           <h4>Bug Fixes</h4>
           <ul>
-            <li>Fixed the import FGMJ (WISE model) Functions</li>             
+            <li>Fixed the import FGMJ (WISE model) Functions</li>
             <ol>The FGMJ outputs of WISE and products like FireCast that leverage WISE were unable to be read by the Prometheus. A bug fix was issued in 2023.06.01 to ensure that WISE generated FGMJ files could be read by Prometheus.</ol>
           </ul>
 
           <h4> Known Issues and Work Arounds (If Available)</h4>
-        <ul>
-          <li> Rasters will not import unless a nodata flag of -9999 is set</li>
-          <li> Prometheus GDAL version will conflict with other GIS programs (R, QGIS, ArcGIS)</li>
-          <ol>
+          <ul>
+            <li> Rasters will not import unless a nodata flag of -9999 is set</li>
+            <li> Prometheus GDAL version will conflict with other GIS programs (R, QGIS, ArcGIS)</li>
+            <ol>
               <li>Fix with Sys.setenv() in R prior to loading GIS packages</li>
               <li>Issue stems from Prometheus hijacking the GDAL_DATA and PROJ_LIB environment variables</li>
-              
+
             </ol>
-          <li>Fires intersecting resulting in the fire that is intersected stopping growth.</li>
+            <li>Fires intersecting resulting in the fire that is intersected stopping growth.</li>
             <ol>
               <li>Fix this by splitting the multiple polygon ignition into individual ignitions and run the scenarios independently</li>
               <li>This does require the modeller to then dissolve by date time but runs faster overall.</li>
             </ol>
             <li> The component window is so full that right clicking brings up a view format menu.</li>
             <ol>When this happens, make the Prometheus window smaller keeping it to the top half the monitor and then expected behaviour will occur.</ol>
-          <li>Unable to read a weather file that has weather in it.</li>
+            <li>Unable to read a weather file that has weather in it.</li>
             <ol>Make sure you have weather starting at midnight.</ol>
-          <li>KML output makes Prometheus not responsive</li>
+            <li>KML output makes Prometheus not responsive</li>
             <ol>It is working, it may just take a long time.</ol>
-        </ul>
+          </ul>
         </div>
       )
     },
@@ -193,7 +193,7 @@ const PrometheusSoftware = () => {
   return (
     <div>
       <Banner title="Prometheus EOL" imageSrc="/images/prometheus_banner.jpg" />
-      
+
       <div className="content">
         <h1>Software</h1>
         <TabContent tabs={tabs} />

@@ -11,13 +11,13 @@ const PandoraSoftware = () => {
       children: (
         <div>
           <p>Pandora 2021.12 was released on April 2, 2022. Pandora parameter files from versions before 3.6 may not work with 2021.12 Check the help file for details.</p>
-          
+
           <ul className="download">
-            <li><a href="https://spyd.com/fgm.ca/pandora2021.12.zip">Download Pandora 2021.12</a></li>
+            <li><a href="https://fgmfiles.spyd.com/pandora2021.12.zip">Download Pandora 2021.12</a></li>
           </ul>
-          
+
           <h3>Installation Instructions</h3>
-          
+
           <ul>
             <li>The Prometheus COM must be installed in order for Pandora to run. Note that the Prometheus COM is not the same as the Prometheus application, though it is installed at the same time.</li>
           </ul>
@@ -39,7 +39,7 @@ const PandoraSoftware = () => {
       children: (
         <div>
           <h3>Changes in Pandora 2021.12</h3>
-      
+
           <ul>
             <li>Accepts wind speed and direction grids</li>
             <li>Option for faster processing when running multiple fires on the same landscape</li>
@@ -57,7 +57,7 @@ const PandoraSoftware = () => {
   return (
     <div>
       <Banner title="Pandora" imageSrc="/images/pandora_banner.jpg" />
-      
+
       <div className="content">
         <h1>Software</h1>
         <TabContent tabs={tabs} />
