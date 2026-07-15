@@ -9,6 +9,10 @@ import WISEOverview from './pages/WISEOverview';
 import WISEDocumentation from './pages/WISEDocumentation';
 import WISESoftware from './pages/WISESoftware';
 import WISESupport from './pages/WISESupport';
+import NomadOverview from './pages/NomadOverview';
+import NomadDocumentation from './pages/NomadDocumentation';
+import NomadSoftware from './pages/NomadSoftware';
+import NomadSupport from './pages/NomadSupport';
 import REDappOverview from './pages/REDappOverview';
 import REDappDocumentation from './pages/REDappDocumentation';
 import REDappSoftware from './pages/REDappSoftware';
@@ -51,7 +55,14 @@ const AppRoutes = () => {
       <Route path="/wise_documentation" element={<WISEDocumentation />} />
       <Route path="/wise_software" element={<WISESoftware />} />
       <Route path="/wise_support" element={<WISESupport />} />
-      
+
+      {/* Nomad routes */}
+
+      <Route path="/nomad_overview" element={<NomadOverview />} />
+      <Route path="/nomad_documentation" element={<NomadDocumentation />} />
+      <Route path="/nomad_software" element={<NomadSoftware />} />
+      <Route path="/nomad_support" element={<NomadSupport />} />
+
     {/* REDapp routes */}
       <Route path="/redapp_overview" element={<REDappOverview />} />
       <Route path="/redapp_documentation" element={<REDappDocumentation />} />

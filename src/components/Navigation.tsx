@@ -18,38 +18,22 @@ const Navigation = () => {
     <div id="dropdownMenu">
 
       <ul className="menu" id="menu">
-        
-          <Link to="/">Home</Link>
-          <Link to="/project_team">Team</Link>
 
-       
-        <li
-          onMouseOver={() => handleMouseOver('prometheus')}
-          onMouseOut={handleMouseOut}
-          className={activeMenu === 'prometheus' ? 'menuhover' : ''}
-        >
-          <Link to="/prometheus_overview">Prometheus EOL</Link>
-          <ul style={{ display: activeMenu === 'prometheus' ? 'block' : 'none' }}>
-            <li><Link to="/prometheus_overview">Overview</Link></li>
-            <li><Link to="/prometheus_documentation">Documentation</Link></li>
-            <li><Link to="/prometheus_software">Software</Link></li>
-            <li><Link to="/prometheus_support">Support</Link></li>
-            <li><Link to="/prometheus_eol">EOL</Link></li>
-          </ul>
-        </li>
+        <Link to="/">Home</Link>
+        <Link to="/project_team">Team</Link>
 
 
         <li
-          onMouseOver={() => handleMouseOver('wise')}
+          onMouseOver={() => handleMouseOver('nomad')}
           onMouseOut={handleMouseOut}
-          className={activeMenu === 'wise' ? 'menuhover' : ''}
+          className={activeMenu === 'nomad' ? 'menuhover' : ''}
         >
-        <Link to="/wise_overview">W.I.S.E.</Link>
-          <ul style={{ display: activeMenu === 'wise' ? 'block' : 'none' }}>
-            <li><Link to="/wise_overview">Overview</Link></li>
-            <li><Link to="/wise_documentation">Documentation</Link></li>
-            <li><Link to="/wise_software">Software</Link></li>
-            <li><Link to="/wise_support">Support</Link></li>
+        <Link to="/nomad_overview">Nomad</Link>
+          <ul style={{ display: activeMenu === 'nomad' ? 'block' : 'none' }}>
+            <li><Link to="/nomad_overview">Overview</Link></li>
+            <li><Link to="/nomad_documentation">Documentation</Link></li>
+            <li><Link to="/nomad_software">Software</Link></li>
+            <li><Link to="/nomad_support">Support</Link></li>
           </ul>
         </li>
 
@@ -59,7 +43,7 @@ const Navigation = () => {
           onMouseOut={handleMouseOut}
           className={activeMenu === 'redapp' ? 'menuhover' : ''}
         >
-        <Link to="/redapp_overview">REDapp</Link>
+          <Link to="/redapp_overview">REDapp</Link>
           <ul style={{ display: activeMenu === 'redapp' ? 'block' : 'none' }}>
             <li><Link to="/redapp_overview">Overview</Link></li>
             <li><Link to="/redapp_documentation">Documentation</Link></li>
@@ -108,6 +92,33 @@ const Navigation = () => {
             <li><Link to="/pandora_documentation">Documentation</Link></li>
             <li><Link to="/pandora_software">Software</Link></li>
             <li><Link to="/pandora_support">Support</Link></li>
+          </ul>
+        </li>
+        <li
+          onMouseOver={() => handleMouseOver('wise')}
+          onMouseOut={handleMouseOut}
+          className={activeMenu === 'wise' ? 'menuhover' : ''}
+        >
+          <Link to="/wise_overview">W.I.S.E.</Link>
+          <ul style={{ display: activeMenu === 'wise' ? 'block' : 'none' }}>
+            <li><Link to="/wise_overview">Overview</Link></li>
+            <li><Link to="/wise_documentation">Documentation</Link></li>
+            <li><Link to="/wise_software">Software</Link></li>
+            <li><Link to="/wise_support">Support</Link></li>
+          </ul>
+        </li>
+        <li
+          onMouseOver={() => handleMouseOver('prometheus')}
+          onMouseOut={handleMouseOut}
+          className={activeMenu === 'prometheus' ? 'menuhover' : ''}
+        >
+          <Link to="/prometheus_overview">Prometheus</Link>
+          <ul style={{ display: activeMenu === 'prometheus' ? 'block' : 'none' }}>
+            <li><Link to="/prometheus_overview">Overview</Link></li>
+            <li><Link to="/prometheus_documentation">Documentation</Link></li>
+            <li><Link to="/prometheus_software">Software</Link></li>
+            <li><Link to="/prometheus_support">Support</Link></li>
+            <li><Link to="/prometheus_eol">EOL</Link></li>
           </ul>
         </li>
         <li><Link to="/fban_tools">FBAN Tools</Link></li>

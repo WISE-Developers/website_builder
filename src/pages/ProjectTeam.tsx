@@ -25,27 +25,51 @@ const ProjectTeam = () => {
   const teamMembers = [
     {
       name: "Neal McLoughlin [BC]",
-      role: "Project Team Lead & Prometheus Lead",
-      expertise: "SME: Prometheus, Fire Modelling, Governance, Govt of BC",
+      role: "Superintendent, Predictive Services Unit, BC Wildfire Service",
+      expertise: "Prometheus, Fire Modelling, Governance, Govt of BC",
       imageSrc: "/images/team/neal_mcloughlin.jpeg"
     },
     {
       name: "Franco Nogarin [NT]",
-      role: "Design, Vision, Project Development Coordinator & W.I.S.E. Lead",
-      expertise: "SME: W.I.S.E., Open Source, Full Stack Dev, Internet, Webhosting, Govt of NT",
+      role: "Territorial Forest Planning Officer, Developer and Modeller, Govt of NWT, Fire Operations",
+      expertise: "Nomad, W.I.S.E., Open Source, Full Stack Dev, Internet, Webhosting, Govt of NT",
       imageSrc: "/images/team/franco_nogarin.jpeg"
     },
     {
       name: "Brett Moore [CFS]",
-      role: "Development Team Lead, Design & Testing",
-      expertise: "SME: Prometheus, W.I.S.E., REDApp, Burn-P3",
+      role: "Fire Response Manager, Canadian Forest Service",
+      expertise: "Nomad, FireSTARR, Prometheus, W.I.S.E., REDApp, Burn-P3",
       imageSrc: "/images/team/brett_moore.jpeg"
     },
     {
       name: "Robert (Rob) Kruus [SK]",
-      role: "Team Consultant - Fire Science Modeller - Govt of SK",
-      expertise: "SME: Prometheus, Modelling, Technology, Govt of SK",
+      role: "Fire Science Modeller - Government of Saskatchewan",
+      expertise: "FireSTARR, Prometheus, Modelling, Technology, Govt of SK",
       imageSrc: "/images/team/rob_kruus.jpeg"
+    },
+    {
+      name: "Nicolas Livanos [BC]",
+      role: "Organisational Developer & Executive Advisor, BC Wildfire Service",
+      expertise: "Agile, Scrum, Project Management, Decision Support and Spatial Fire Management",
+      imageSrc: "/images/team/nicolas_livanos.jpeg"
+    },
+    {
+      name: "Dylan Baker [CIFFC]",
+      role: "Developer, Canadian Interagency Forest Fire Centre",
+      expertise: "REDApp, CIFFC",
+      imageSrc: "/images/team/dylan_baker.jpeg"
+    },
+    {
+      name: "Manny Diaz [CIFFC]",
+      role: "Information Technology Architect & Stewardship Lead, Canadian Interagency Forest Fire Centre",
+      expertise: "IT, CIFFC",
+      imageSrc: "/images/team/manny_diaz.jpeg"
+    },
+    {
+      name: "Kyle Steele [CIFFC]",
+      role: "Professional Web Developer - WebWizards.ca",
+      expertise: "REDApp",
+      imageSrc: "/images/team/kyle_steele.jpeg"
     }
   ];
 
@@ -54,9 +78,8 @@ const ProjectTeam = () => {
       <Banner title="The Team" imageSrc="/images/main_banner.jpg" />
       
       <div className="content">
-        <h1 id="development-team">WISE Exec Team</h1>
-        <h4 id="team-members">Team Members: If you don't like your photo, provide a better one ;-)</h4>
-        
+        <h1 id="development-team">National Fire Modelling Dev Team</h1>
+
         <div className="featured">
           <div className="w3-content" id="team">
             <div className="team-grid">
