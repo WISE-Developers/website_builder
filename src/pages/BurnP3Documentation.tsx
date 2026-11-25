@@ -29,7 +29,7 @@ const BurnP3Documentation = () => {
         <h1>Documentation</h1>
         <DocumentationTable items={documentationItems} />
         <div className="warning">
-          <p>The <Link to="/burnp3plus">BurnP3+</Link> project is the modern, open-source successor to Burn-P3.</p>
+          <p>The <Link to="/burnp3plus_overview">BurnP3+</Link> project is the modern, open-source successor to Burn-P3.</p>
           </div>
       </div>
     </div>
