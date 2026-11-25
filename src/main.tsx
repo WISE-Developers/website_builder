@@ -16,7 +16,7 @@ import './styles/PrometheusDocumentation.css';
 import './styles/PrometheusSoftware.css';
 import './styles/PrometheusSupport.css';
 import './styles/PrometheusEOL.css';
-import './styles/BurnP3.css';
+import './styles/Burnp3.css';
 import './styles/BurnP3Overview.css';
 import './styles/BurnP3Documentation.css';
 import './styles/BurnP3Software.css';
