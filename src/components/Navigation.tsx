@@ -51,23 +51,6 @@ const Navigation = () => {
             <li><Link to="/redapp_support">Support</Link></li>
           </ul>
         </li>
-
-
-
-
-        <li
-          onMouseOver={() => handleMouseOver('burnp3')}
-          onMouseOut={handleMouseOut}
-          className={activeMenu === 'burnp3' ? 'menuhover' : ''}
-        >
-          <Link to="/burnp3_overview">Burn-P3</Link>
-          <ul style={{ display: activeMenu === 'burnp3' ? 'block' : 'none' }}>
-            <li><Link to="/burnp3_overview">Overview</Link></li>
-            <li><Link to="/burnp3_documentation">Documentation</Link></li>
-            <li><Link to="/burnp3_software">Software</Link></li>
-            <li><Link to="/burnp3_support">Support</Link></li>
-          </ul>
-        </li>
         <li
           onMouseOver={() => handleMouseOver('burnp3plus')}
           onMouseOut={handleMouseOut}
@@ -119,6 +102,19 @@ const Navigation = () => {
             <li><Link to="/prometheus_software">Software</Link></li>
             <li><Link to="/prometheus_support">Support</Link></li>
             <li><Link to="/prometheus_eol">EOL</Link></li>
+          </ul>
+        </li>
+        <li
+          onMouseOver={() => handleMouseOver('burnp3')}
+          onMouseOut={handleMouseOut}
+          className={activeMenu === 'burnp3' ? 'menuhover' : ''}
+        >
+          <Link to="/burnp3_overview">Burn-P3 (Legacy)</Link>
+          <ul style={{ display: activeMenu === 'burnp3' ? 'block' : 'none' }}>
+            <li><Link to="/burnp3_overview">Overview</Link></li>
+            <li><Link to="/burnp3_documentation">Documentation</Link></li>
+            <li><Link to="/burnp3_software">Software</Link></li>
+            <li><Link to="/burnp3_support">Support</Link></li>
           </ul>
         </li>
         <li><Link to="/fban_tools">FBAN Tools</Link></li>
