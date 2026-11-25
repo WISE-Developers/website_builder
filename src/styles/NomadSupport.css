@@ -1,0 +1,86 @@
+.content {
+    padding: 20px 0;
+  }
+  
+  .support-container {
+    padding: 20px 0;
+  }
+  
+  .support-container h1, .support-container h2, .support-container h3 {
+    margin: 25px 0 15px;
+  }
+  
+  .support-container h1 {
+    font-size: 1.8em;
+  }
+  
+  .support-container h2 {
+    font-size: 1.5em;
+  }
+  
+  .support-container h3 {
+    font-size: 1.2em;
+  }
+  
+  .support-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .support-container a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-link-color, rgb(85, 171, 246));
+  }
+  
+  .support-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .support-container a img {
+    margin-right: 5px;
+  }
+  
+  .support-container ul {
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  
+  .support-container li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .discord-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .discord-container a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .invertedColor {
+    filter: invert(100%);
+  }
+  
+  @media (max-width: 768px) {
+    .discord-container a img {
+      height: 40px;
+    }
+  }
+
+  #wise-logo {
+    height: 100px;
+    width: auto;
+  }
+
+  #discord-logo {
+    height: 100px;
+    width: auto;
+  }
+

@@ -20,19 +20,19 @@ const BurnP3PlusSoftware = () => {
           <ul className="download">
             <li><a href="https://cran.r-project.org/bin/windows/base/">Download R (Windows)</a></li>
           </ul>
-          
+
           <h3>Known Issues</h3>
           <p>Current issues can be found on <a href="https://github.com/BurnP3/BurnP3Plus/issues">GitHub</a></p>
 
           <h3>Important Installation Instructions</h3>
           <ul>
             <li>Install <a href="https://syncrosim.com/desktop/">SyncroSim</a>. SyncroSim is the main tool that coordinates fire growth modelling for BurnP3+.</li>
-            <li>Install <a href="/prometheus_software">Prometheus 2021.12.03</a><br/>Prometheus is a requirement of the tool.</li>
+            <li>Install <a href="/prometheus_software">Prometheus 2021.12.03</a><br />Prometheus is a requirement of the tool.</li>
           </ul>
-          
+
           <h4>If you use the Conda option in SyncroSim, you do not need to do the following steps.</h4>
           <ul>
-            <li>Install <a href="https://cran.r-project.org/bin/windows/base/">R</a><br/>R is the underpinning of the BurnP3+ methodology. SyncroSim leverages RSyncroSim to perform the modelling within the SyncroSim software.</li>
+            <li>Install <a href="https://cran.r-project.org/bin/windows/base/">R</a><br />R is the underpinning of the BurnP3+ methodology. SyncroSim leverages RSyncroSim to perform the modelling within the SyncroSim software.</li>
           </ul>
 
           <h3>Sample Data Set</h3>
@@ -42,7 +42,7 @@ const BurnP3PlusSoftware = () => {
           </ul>
           <p>We delivered a course April 28-30 2025 at the University of Alberta. The materials from that course are available below.</p>
           <ul>
-            <li><a href="https://spyd.com/fgm.ca/2025-04-28_BurnP3plusCourse.zip">2025-04-28 BurnP3+ Course Material</a></li>
+            <li><a href="https://fgmfiles.spyd.com/2025-04-28_BurnP3plusCourse.zip">2025-04-28 BurnP3+ Course Material</a></li>
           </ul>
         </div>
       )
@@ -65,8 +65,8 @@ const BurnP3PlusSoftware = () => {
             <tbody>
               <tr>
                 <td>Operating System*</td>
-                <td>64-bit Windows 7 or<br/>Windows Server 2008</td>
-                <td>64-bit Windows 10 or<br/>Windows Server 2008 R2</td>
+                <td>64-bit Windows 7 or<br />Windows Server 2008</td>
+                <td>64-bit Windows 10 or<br />Windows Server 2008 R2</td>
               </tr>
               <tr>
                 <td>Prometheus Software</td>
@@ -75,18 +75,18 @@ const BurnP3PlusSoftware = () => {
               </tr>
               <tr>
                 <td>Microsoft Software</td>
-                <td>.NET Framework 4.6<br/>and<br/>Visual C++ 2017 Redistributable (x64)</td>
-                <td>.NET Framework 4.7<br/>and<br/>Visual C++ 2017 Redistributable (x64)</td>
+                <td>.NET Framework 4.6<br />and<br />Visual C++ 2017 Redistributable (x64)</td>
+                <td>.NET Framework 4.7<br />and<br />Visual C++ 2017 Redistributable (x64)</td>
               </tr>
               <tr>
                 <td>Oracle Software</td>
-                <td>Java 8.0 for Windows (x64)<br/>(Update 151)</td>
-                <td>Java 8.0 for Windows (x64)<br/>(Update 191)</td>
+                <td>Java 8.0 for Windows (x64)<br />(Update 151)</td>
+                <td>Java 8.0 for Windows (x64)<br />(Update 191)</td>
               </tr>
               <tr>
                 <td>Intel&#174; Software</td>
-                <td>2019 C++ Redistributable Library for Windows (x64)<br/>(Initial Release: 19.0.117)</td>
-                <td>2019 C++ Redistributable Library for Windows (x64)<br/>(Update 1: 19.1.144)</td>
+                <td>2019 C++ Redistributable Library for Windows (x64)<br />(Initial Release: 19.0.117)</td>
+                <td>2019 C++ Redistributable Library for Windows (x64)<br />(Update 1: 19.1.144)</td>
               </tr>
               <tr>
                 <td>Processors</td>
@@ -121,9 +121,9 @@ const BurnP3PlusSoftware = () => {
       children: (
         <div>
           <h3>Changes in BurnP3+</h3>
-    
+
           <h4>New Features</h4>
-          
+
           <ul>
             <li><a href="https://github.com/BurnP3/BurnP3Plus/releases/latest">Latest Release</a></li>
           </ul>
@@ -140,7 +140,7 @@ const BurnP3PlusSoftware = () => {
   return (
     <div>
       <Banner title="BurnP3+" imageSrc="/images/burnp3_banner.jpg" />
-      
+
       <div className="content">
         <h1>Software</h1>
         <TabContent tabs={tabs} />

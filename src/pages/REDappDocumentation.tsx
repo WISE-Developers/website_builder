@@ -7,7 +7,7 @@ const REDappDocumentation = () => {
     {
       imageSrc: '/images/redapp_manual_img_sm.png',
       title: 'The REDapp User Guide 6.2 (2019)',
-      linkUrl: 'https://spyd.com/fgm.ca/REDapp_6.2_User_Guide_1.pdf',
+      linkUrl: 'https://fgmfiles.spyd.com/REDapp_6.2_User_Guide_1.pdf',
       linkText: 'PDF',
       altText: 'REDapp User Guide 6.2 PDF'
     },
@@ -22,10 +22,10 @@ const REDappDocumentation = () => {
 
   return (
     <div>
-      <Banner title="REDapp" imageSrc="/images/redapp_banner.png" />     
+      <Banner title="REDapp" imageSrc="/images/redapp_banner.png" />
       <div className="content">
         <h1>Documentation</h1>
-        
+
 
 
         <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
@@ -39,10 +39,10 @@ const REDappDocumentation = () => {
             data-ready="true"
           ></iframe>
         </div>
-        
+
         <DocumentationTable items={documentationItems} />
 
-        
+
       </div>
     </div>
   );

@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <div id="footer">
       <ul>
-        <li id="left"><a href="#top">Top of Page</a></li>
-        <li className="right" id="footer-date">Site updated: 2025-06-03</li>
+        <li id="left"><a href="#top" onClick={(e) => { e.preventDefault(); window.scrollTo(0, 0); }}>Top of Page</a></li>
+        <li className="right" id="footer-date">Site Last Updated: 2026-07-15 3pm MDT</li>
       </ul>
     </div>
   );

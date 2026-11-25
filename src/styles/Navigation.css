@@ -5,7 +5,7 @@
   top: -18px;
   height: 36px;
   width: auto;
-  margin: 0 16px -18px 0;
+  margin: 0 16px -12px 0;
   padding: 0 14px;
   background: #851719;
   border-radius: 6px;
@@ -32,10 +32,10 @@
 .menu a:link,
 .menu a:visited {
   float: left;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   color: #f3f3f3;
-  margin: 9px 14px;
+  margin: 9px 10px;
   padding: 0;
   text-decoration: none;
 }
